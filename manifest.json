@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Reddit Upvote All",
+    "version": "1.0",
+    "description": "Automatically upvote all comments and replies on a Reddit post.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "shib1.png",
+            "48": "shib1.png",
+            "128": "shib1.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.reddit.com/r/*/comments/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}

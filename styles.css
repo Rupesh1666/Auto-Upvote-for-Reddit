@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 200px;
+    padding: 10px;
+}
+
+#upvote-button {
+    padding: 10px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#upvote-button:hover {
+    background-color: #e44100;
+}
